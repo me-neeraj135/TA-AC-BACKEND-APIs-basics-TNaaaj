@@ -10,7 +10,7 @@ router.post(`/`, async (req, res, next) => {
     let state = await State.create(req.body);
     res.status(200).json({ state: state });
   } catch (error) {
-    res.status(400).send(error);
+    res.send(error);
   }
 });
 
