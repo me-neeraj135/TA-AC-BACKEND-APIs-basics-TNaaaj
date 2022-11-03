@@ -32,7 +32,7 @@ router.get(`/country/:id`, async (req, res, next) => {
     );
     res.status(200).json({ country: country });
   } catch (error) {
-    res.status(400).send(error);
+    res.send(error);
   }
 });
 
